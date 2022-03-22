@@ -1,24 +1,10 @@
 import React from 'react';
 
-import { useState, useEffect } from 'react';
-import { getMovies } from '../services/fetch';
-
 export default function Main() {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    async function fetchMovies() {
-      const movies = await getMovies();
-      setMovies(movies);
-    }
-    fetchMovies();
-  }, []);
-
   return (
     <div>
-      {movies.map((movie) => (
-        <p key={movie.id}>{movie.title}</p>
-      ))}
+      <h1>Do you like Star Wars, Fuzzy Bunnies, and Doughnuts?</h1>
+      <h2>Well, you are in luck!</h2>
     </div>
   );
 }
