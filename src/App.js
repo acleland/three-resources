@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Main from './views/Main';
+import Main from './views/Main/Main';
 import Nav from './components/Nav/Nav';
 import StarWars from './views/StarWars/StarWars';
 import Bunnies from './views/Bunnies/Bunnies';

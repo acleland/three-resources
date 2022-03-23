@@ -1,7 +1,12 @@
 import { client, checkError } from './client';
 
 export async function getMovies() {
-  const resp = await client.from('movies').select('*');
+  const resp = await client.from('movies').select('*, directors(name)');
+  return checkError(resp);
+}
+
+export async function getDirectors() {
+  const resp = await client.from('directors').select('id, name');
   return checkError(resp);
 }
 
