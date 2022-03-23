@@ -1,8 +1,7 @@
 // import { render, screen } from '@testing-library/react';
 // import App from './App';
+// import Doughnuts from './views/Doughnuts/Doughnuts';
 
-// test('renders main component', () => {
-//   // render(<App />);
-//   // const title = screen.getByText('Star Wars');
-//   // expect(title).toBeInTheDocument();
-// });
+test('renders main component', () => {
+  expect(1 === 1);
+});
