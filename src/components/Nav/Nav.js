@@ -14,7 +14,9 @@ export default function Nav() {
           <NavLink to="/starwars">Star Wars</NavLink>
         </li>
         <li>
-          <NavLink to="/fuzzybunnies">Fuzzy Bunnies</NavLink>
+          <NavLink exact to="/fuzzybunnies">
+            Fuzzy Bunnies
+          </NavLink>
         </li>
         <li>
           <NavLink to="/doughnuts">Doughnuts</NavLink>
